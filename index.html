@@ -21,9 +21,9 @@
         <p class="intro">te hice algo, porque cualquier pretexto es bonito si se trata de recordarte lo especial que eres para mí.</p>
         <button class="open-button" id="openButton" type="button">Abrir este detalle <span>→</span></button>
       </div>
-      <div class="sunflower" aria-label="Ilustración de un girasol">
-        <div class="flower-head"><span></span></div>
-        <div class="stem"><i></i><b></b></div>
+      <div class="sunflower" aria-label="Ramo de girasoles">
+        <img src="sunflowers-real.png" alt="Tres girasoles amarillos naturales">
+        <span class="flower-glow"></span>
       </div>
       <span class="scroll-hint">Desliza para descubrir ↓</span>
     </section>
@@ -42,7 +42,7 @@
         <h2>Mis lugares favoritos son donde estás tú.</h2>
       </div>
       <div class="gallery">
-        <figure class="photo photo-wide reveal"><img src="momento-1.png" alt="Damaris y Pato compartiendo un momento juntos" loading="lazy"><figcaption>Tu sonrisa, mi lugar seguro.</figcaption></figure>
+        <figure class="photo photo-wide reveal"><img src="momento-nuevo.jpeg" alt="Damaris y Pato compartiendo un momento juntos" loading="lazy"><figcaption>Tu sonrisa, mi lugar seguro.</figcaption></figure>
         <figure class="photo photo-tall reveal"><img src="momento-2.png" alt="Damaris y Pato en un partido" loading="lazy"><figcaption>Contigo, cualquier plan se vuelve recuerdo.</figcaption></figure>
         <figure class="photo photo-tall reveal"><img src="momento-3.jpeg" alt="Damaris y Pato compartiendo un beso" loading="lazy"><figcaption>Ese beso que quisiera repetir siempre.</figcaption></figure>
         <figure class="photo photo-wide reveal"><img src="momento-4.jpeg" alt="Damaris y Pato abrazados en un mirador" loading="lazy"><figcaption>Y todas las vistas que todavía nos faltan.</figcaption></figure>
@@ -56,6 +56,8 @@
       <button class="replay" id="replayButton" type="button">Llenar la pantalla de flores</button>
     </section>
   </main>
+  <button class="music-toggle paused" id="musicToggle" type="button" aria-label="Reproducir o pausar música"><span class="music-icon">♫</span><span class="music-label">Nuestra canción</span></button>
+  <audio id="backgroundMusic" autoplay loop preload="auto"><source src="cancion.mp3" type="audio/mpeg"></audio>
   <footer>Hecho especialmente para ti · 2026</footer>
   <script src="script.js"></script>
 </body>
