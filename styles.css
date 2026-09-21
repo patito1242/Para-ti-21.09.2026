@@ -40,3 +40,4 @@
 .thread-hand-end{right:4%;bottom:4.2rem;transform:rotate(-42deg)}
 @media(max-width:760px){.page-thread-shadow{stroke-width:5}.page-thread-line{stroke-width:2.6}.thread-hand-start{left:1%}.thread-hand-end{right:.5%}}
 @media(prefers-reduced-motion:reduce){.page-thread-line{transition:none}}
+body{position:relative}
