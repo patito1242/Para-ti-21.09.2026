@@ -55,7 +55,8 @@ setTimeout(() => flowers(12), 700);
 
 const drawPageThread = () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  const progress = scrollable > 0 ? Math.min(1, Math.max(0, window.scrollY / scrollable)) : 1;
+  const rawProgress = scrollable > 0 ? Math.min(1, Math.max(0, window.scrollY / scrollable)) : 1;
+  const progress = .02 + rawProgress * .98;
   pageThread.style.strokeDashoffset = String(1 - progress);
 };
 drawPageThread();

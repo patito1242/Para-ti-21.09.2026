@@ -33,10 +33,10 @@
 /* Hilo rojo que se dibuja a lo largo de toda la página */
 .page-thread{position:absolute;z-index:12;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
 .page-thread path{fill:none;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}
-.page-thread-shadow{stroke:#6f0000;stroke-width:7;opacity:.18}
+.page-thread-shadow{display:none}
 .page-thread-line{stroke:#ef1616;stroke-width:3.3;stroke-dasharray:1;stroke-dashoffset:1;filter:drop-shadow(0 1px 2px #7a000080)}
 .thread-hand{position:absolute;z-index:13;font-size:clamp(2.8rem,5vw,5rem);line-height:1;pointer-events:none;filter:grayscale(1) brightness(.28) drop-shadow(0 4px 5px #0003)}
 .thread-hand-start{top:.35rem;left:2.5%;transform:rotate(48deg)}
-.thread-hand-end{right:1.8%;bottom:.15rem;transform:rotate(-42deg)}
+.thread-hand-end{right:4%;bottom:4.2rem;transform:rotate(-42deg)}
 @media(max-width:760px){.page-thread-shadow{stroke-width:5}.page-thread-line{stroke-width:2.6}.thread-hand-start{left:1%}.thread-hand-end{right:.5%}}
 @media(prefers-reduced-motion:reduce){.page-thread-line{transition:none}}
