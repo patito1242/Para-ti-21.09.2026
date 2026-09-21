@@ -1,6 +1,7 @@
 const details = document.querySelector('#detalle');
 const music = document.querySelector('#backgroundMusic');
 const musicToggle = document.querySelector('#musicToggle');
+const pageThread = document.querySelector('.page-thread-line');
 
 music.volume = .42;
 const startMusic = () => music.play()
@@ -51,3 +52,12 @@ function flowers(total = 28) {
 
 document.querySelector('#replayButton').addEventListener('click', () => flowers(36));
 setTimeout(() => flowers(12), 700);
+
+const drawPageThread = () => {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollable > 0 ? Math.min(1, Math.max(0, window.scrollY / scrollable)) : 1;
+  pageThread.style.strokeDashoffset = String(1 - progress);
+};
+drawPageThread();
+addEventListener('scroll', drawPageThread, { passive: true });
+addEventListener('resize', drawPageThread);

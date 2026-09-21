@@ -9,10 +9,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="styles.css?v=12">
 </head>
 <body>
   <div class="petals" aria-hidden="true"></div>
+  <svg class="page-thread" viewBox="0 0 1000 6000" preserveAspectRatio="none" aria-hidden="true">
+    <path class="page-thread-shadow" d="M72 70 C18 230 98 430 45 650 C8 850 94 1040 48 1260 C14 1470 88 1670 42 1885 C10 2100 98 2290 50 2510 C16 2720 90 2920 44 3140 C12 3350 96 3540 48 3760 C14 3970 92 4180 48 4390 C18 4580 84 4790 58 5000 C38 5170 92 5340 225 5480 C355 5615 475 5535 605 5680 C730 5820 842 5770 940 5932"/>
+    <path class="page-thread-line" pathLength="1" d="M72 70 C18 230 98 430 45 650 C8 850 94 1040 48 1260 C14 1470 88 1670 42 1885 C10 2100 98 2290 50 2510 C16 2720 90 2920 44 3140 C12 3350 96 3540 48 3760 C14 3970 92 4180 48 4390 C18 4580 84 4790 58 5000 C38 5170 92 5340 225 5480 C355 5615 475 5535 605 5680 C730 5820 842 5770 940 5932"/>
+  </svg>
+  <span class="thread-hand thread-hand-start" aria-hidden="true">🫳</span>
+  <span class="thread-hand thread-hand-end" aria-hidden="true">🫴</span>
   <main>
     <section class="hero">
       <div class="hero-copy">
@@ -42,10 +48,10 @@
         <h2>Mis lugares favoritos son donde estás tú.</h2>
       </div>
       <div class="gallery">
-        <figure class="photo photo-wide reveal"><div class="frame-wrap"><img src="momento-nuevo.jpeg?v=2" alt="Damaris y Pato compartiendo un momento juntos" loading="lazy"><img class="thread-frame" src="01-1000155624.png?v=1" alt="" aria-hidden="true"></div><figcaption>Tu sonrisa, mi lugar seguro.</figcaption></figure>
-        <figure class="photo photo-tall reveal"><div class="frame-wrap"><img src="momento-2.png" alt="Damaris y Pato en un partido" loading="lazy"><img class="thread-frame" src="01-1000155624.png?v=1" alt="" aria-hidden="true"></div><figcaption>Contigo, cualquier plan se vuelve recuerdo.</figcaption></figure>
-        <figure class="photo photo-tall reveal"><div class="frame-wrap"><img src="momento-3.jpeg" alt="Damaris y Pato compartiendo un beso" loading="lazy"><img class="thread-frame" src="01-1000155624.png?v=1" alt="" aria-hidden="true"></div><figcaption>Ese beso que quisiera repetir siempre.</figcaption></figure>
-        <figure class="photo photo-wide reveal"><div class="frame-wrap"><img src="momento-4.jpeg" alt="Damaris y Pato abrazados en un mirador" loading="lazy"><img class="thread-frame" src="01-1000155624.png?v=1" alt="" aria-hidden="true"></div><figcaption>Y todas las vistas que todavía nos faltan.</figcaption></figure>
+        <figure class="photo photo-wide reveal"><div class="frame-wrap"><img src="momento-nuevo.jpeg?v=2" alt="Damaris y Pato compartiendo un momento juntos" loading="lazy"></div><figcaption>Tu sonrisa, mi lugar seguro.</figcaption></figure>
+        <figure class="photo photo-tall reveal"><div class="frame-wrap"><img src="momento-2.png" alt="Damaris y Pato en un partido" loading="lazy"></div><figcaption>Contigo, cualquier plan se vuelve recuerdo.</figcaption></figure>
+        <figure class="photo photo-tall reveal"><div class="frame-wrap"><img src="momento-3.jpeg" alt="Damaris y Pato compartiendo un beso" loading="lazy"></div><figcaption>Ese beso que quisiera repetir siempre.</figcaption></figure>
+        <figure class="photo photo-wide reveal"><div class="frame-wrap"><img src="momento-4.jpeg" alt="Damaris y Pato abrazados en un mirador" loading="lazy"></div><figcaption>Y todas las vistas que todavía nos faltan.</figcaption></figure>
       </div>
     </section>
 
@@ -59,6 +65,6 @@
   <button class="music-toggle paused" id="musicToggle" type="button" aria-label="Reproducir o pausar música"><span class="music-icon">♫</span><span class="music-label">Nuestra canción</span></button>
   <audio id="backgroundMusic" autoplay loop preload="auto"><source src="cancion.mp3?v=2" type="audio/mpeg"></audio>
   <footer>Hecho especialmente para ti · 2026</footer>
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
