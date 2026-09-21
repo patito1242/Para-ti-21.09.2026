@@ -53,6 +53,48 @@ function flowers(total = 28) {
 document.querySelector('#replayButton').addEventListener('click', () => flowers(36));
 setTimeout(() => flowers(12), 700);
 
+document.querySelectorAll('.reason-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const isOpen = card.classList.toggle('open');
+    card.setAttribute('aria-expanded', String(isOpen));
+    if (isOpen) flowers(5);
+  });
+});
+
+const gardenBed = document.querySelector('#gardenBed');
+const gardenMessage = document.querySelector('#gardenMessage');
+const gardenThoughts = [
+  'Tu sonrisa siempre encuentra la forma de alegrarme.',
+  'Gracias por ser calma, aventura y hogar al mismo tiempo.',
+  'Ojalá nos queden muchísimos recuerdos por crear.',
+  'Coincidir contigo es de mis casualidades favoritas.',
+  'Lo bonito no son las flores: es poder dártelas a ti.'
+];
+let planted = 0;
+
+document.querySelector('#plantButton').addEventListener('click', () => {
+  const bloom = document.createElement('span');
+  bloom.className = 'garden-bloom';
+  bloom.textContent = ['🌻', '🌼', '🌹', '🌷', '🏵️', '💛'][planted % 6];
+  bloom.style.setProperty('--x', `${8 + Math.random() * 82}%`);
+  bloom.style.setProperty('--delay', `${Math.random() * .18}s`);
+  bloom.style.setProperty('--tilt', `${-12 + Math.random() * 24}deg`);
+  gardenBed.appendChild(bloom);
+  gardenMessage.textContent = gardenThoughts[planted % gardenThoughts.length];
+  planted += 1;
+  if (planted % 5 === 0) flowers(10);
+});
+
+const secretDialog = document.querySelector('#secretDialog');
+document.querySelector('#secretButton').addEventListener('click', () => {
+  secretDialog.showModal();
+  flowers(14);
+});
+document.querySelector('#dialogClose').addEventListener('click', () => secretDialog.close());
+secretDialog.addEventListener('click', event => {
+  if (event.target === secretDialog) secretDialog.close();
+});
+
 const drawPageThread = () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
   const rawProgress = scrollable > 0 ? Math.min(1, Math.max(0, window.scrollY / scrollable)) : 1;

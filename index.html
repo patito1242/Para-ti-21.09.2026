@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20">
+  <link rel="stylesheet" href="styles.css?v=21">
 </head>
 <body>
   <div class="petals" aria-hidden="true"></div>
@@ -27,8 +27,8 @@
         <p class="intro">te hice algo, porque cualquier pretexto es bonito si se trata de recordarte lo especial que eres para mí.</p>
         <button class="open-button" id="openButton" type="button">Abrir este detalle <span>→</span></button>
       </div>
-      <div class="sunflower" aria-label="Ramo de girasoles">
-        <img src="sunflowers-real.png?v=2" alt="Tres girasoles amarillos naturales">
+      <div class="sunflower" aria-label="Ramo de flores amarillas variadas">
+        <img src="flores-amarillas-mixtas.png?v=1" alt="Ramo natural de rosas, tulipanes, margaritas, lirios y girasoles amarillos">
         <span class="flower-glow"></span>
       </div>
       <span class="scroll-hint">Desliza para descubrir ↓</span>
@@ -40,6 +40,40 @@
       <p>Son una forma de decirte que me encanta coincidir contigo, compartir momentos y seguir construyendo recuerdos juntos.</p>
       <p>Gracias por cada risa, cada aventura y por hacer que hasta los días normales tengan algo especial.</p>
       <p class="signature">Con cariño,<br><strong>Pato</strong> 💛</p>
+    </section>
+
+    <section class="reasons" aria-labelledby="reasonsTitle">
+      <div class="section-heading reveal">
+        <p class="tiny">Por si alguna vez lo olvidas</p>
+        <h2 id="reasonsTitle">Hay mil razones para elegirte.</h2>
+        <p class="section-copy">Toca cada sobre para descubrir algunas de ellas.</p>
+      </div>
+      <div class="reason-grid">
+        <button class="reason-card reveal" type="button" aria-expanded="false">
+          <span class="reason-number">01</span><span class="reason-prompt">Abrir mensaje</span>
+          <span class="reason-text">Porque tu forma de ser hace más bonitos hasta los días comunes.</span>
+        </button>
+        <button class="reason-card reveal" type="button" aria-expanded="false">
+          <span class="reason-number">02</span><span class="reason-prompt">Abrir mensaje</span>
+          <span class="reason-text">Porque contigo las risas se sienten más sinceras y los recuerdos más nuestros.</span>
+        </button>
+        <button class="reason-card reveal" type="button" aria-expanded="false">
+          <span class="reason-number">03</span><span class="reason-prompt">Abrir mensaje</span>
+          <span class="reason-text">Porque me encanta la persona que soy cuando estoy a tu lado.</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="garden reveal" aria-labelledby="gardenTitle">
+      <div class="garden-copy">
+        <p class="tiny">Un jardín solo para ti</p>
+        <h2 id="gardenTitle">Cada toque hace florecer un pensamiento bonito.</h2>
+        <p id="gardenMessage">Empieza sembrando una flor…</p>
+        <button class="plant-button" id="plantButton" type="button">Hacer florecer algo 💛</button>
+      </div>
+      <div class="garden-bed" id="gardenBed" aria-live="polite">
+        <span class="garden-spark">✦</span><span class="garden-spark">✦</span><span class="garden-spark">✦</span>
+      </div>
     </section>
 
     <section class="memories">
@@ -60,11 +94,19 @@
       <h2>Feliz Día de las Flores Amarillas</h2>
       <p>Tal vez los girasoles no sean tus favoritos, pero tú sí eres de mis personas favoritas.</p>
       <button class="replay" id="replayButton" type="button">Llenar la pantalla de flores</button>
+      <button class="secret-button" id="secretButton" type="button">Un último secreto ✉</button>
     </section>
   </main>
+  <dialog class="secret-dialog" id="secretDialog">
+    <button class="dialog-close" id="dialogClose" type="button" aria-label="Cerrar">×</button>
+    <span class="secret-kicker">Entre tú y yo</span>
+    <h2>Si pudiera regalarte algo…</h2>
+    <p>sería la posibilidad de verte con mis ojos, para que supieras lo especial que eres para mí.</p>
+    <span class="secret-sign">Siempre tú. 💛</span>
+  </dialog>
   <button class="music-toggle paused" id="musicToggle" type="button" aria-label="Reproducir o pausar música"><span class="music-icon">♫</span><span class="music-label">Nuestra canción</span></button>
   <audio id="backgroundMusic" autoplay loop preload="auto"><source src="cancion.mp3?v=2" type="audio/mpeg"></audio>
   <footer>Hecho especialmente para ti · 2026</footer>
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
