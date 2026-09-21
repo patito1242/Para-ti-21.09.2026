@@ -37,7 +37,7 @@
 .page-thread-line{stroke:#ef1616;stroke-width:3.3;stroke-dasharray:1;stroke-dashoffset:1;filter:drop-shadow(0 1px 2px #7a000080)}
 .thread-hand{position:absolute;z-index:13;font-size:clamp(2.8rem,5vw,5rem);line-height:1;pointer-events:none;filter:grayscale(1) brightness(.28) drop-shadow(0 4px 5px #0003)}
 .thread-hand-start{top:.35rem;left:2.5%;transform:rotate(48deg)}
-.thread-hand-end{right:12%;bottom:7rem;transform:rotate(-42deg)}
-@media(max-width:760px){.page-thread-shadow{stroke-width:5}.page-thread-line{stroke-width:2.6}.thread-hand-start{left:1%}.thread-hand-end{right:.5%}}
+.thread-hand-end{left:5%;bottom:2.5rem;transform:rotate(-42deg)}
+@media(max-width:760px){.page-thread-shadow{stroke-width:5}.page-thread-line{stroke-width:2.6}.thread-hand-start{left:1%}.thread-hand-end{left:5%}}
 @media(prefers-reduced-motion:reduce){.page-thread-line{transition:none}}
 body{position:relative}
